@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageLogin.master.cs" Inherits="MasterPageLogin" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>School Website</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="SIS.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+	body
+        {
+            font-family: Arial, Sans-Serif;
+            font-size: 13px;
+        }
+	#inputArea
+	{
+	    font-family: Arial, Sans-Serif;
+	    font-size: 13px;
+	    background-color: #CCFFCC;
+	    padding: 10px;
+	    width:310px;
+	}
+	#inputArea input, #inputArea textarea
+	{
+	    font-family: Arial, Sans-Serif;
+	    font-size: 13px;
+	    margin-bottom: 5px;
+	    display: block;
+	    padding: 4px;
+	    width: 300px;
+	}
+
+        .activeField
+        {
+            background-image: none;
+            background-color: #ffffff;
+            border: solid 1px #33677F;
+        }
+        .idle
+        {
+	    border: solid 1px #85b1de;
+	    background-image: url( 'blue_bg.png' );
+	    background-repeat: repeat-x;
+	    background-position: top;
+        }
+        </style>
+</head>
+<body>
+    <form id="Form1" class="" runat="server">
+    <div id="wrapper">
+	<div id="header" class="style1">
+		<h1><a href="<%= ResolveUrl("~/index.aspx") %>">School Website</a></h1>
+		<%--<h2><a href="<%= ResolveUrl("~/AboutUs.aspx") %>">   </a></h2>--%>
+	</div>
+    <div id="menu">
+			<ul >
+				 <%--
+                <li class="item"><a     id="AboutUs"    href="AboutUs.aspx" title="" runat="server">About Us</a></li>--%>
+				<li class="item"><a     id="Report"     href="Login.aspx"  title="" runat="server">Login</a></li>
+			
+			</ul>
+	</div>
+	<div align="center" >
+		
+        
+        
+	    <br />
+        <br />
+        <br />
+		
+        
+        
+	Syrian Virtual University
+
+
+        <br />
+        <br />
+        BIT–S16–ITP390<br />
+        <br />
+        <br />
+        <br />
+        <br />
+&nbsp;إشراف&nbsp;
+        <br />
+        <br />
+&nbsp;الدكتور :&nbsp; ياسر رحال<br />
+        <br />
+        <br />
+        <br />
+        <br />
+&nbsp;G3     أعضاء المجموعة
+        <br />
+        <br />
+        C6	Boushra ALboush 	Boushra_65331
+        <br />
+        <br />
+        C6	Rawan ALkasem	Rawan_61738 
+
+
+            <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+		
+        
+         
+	</div>
+	<!-- end #content -->
+
+	<!-- Please do not remove the "Design by" information. -->
+	<div id="footer">
+		<p></p>
+	</div>
+	<!-- end footer -->
+
+</div>
+    </form>
+</body>
+</html>

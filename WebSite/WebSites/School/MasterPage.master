@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#h1").css("color", "red")
+            .slideUp(2000)
+            .slideDown(2000);
+    });
+</script>
+ 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>School Website</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="SIS.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+	body
+        {
+            font-family: Arial, Sans-Serif;
+            font-size: 13px;
+        }
+	#inputArea
+	{
+	    font-family: Arial, Sans-Serif;
+	    font-size: 13px;
+	    background-color: #CCFFCC;
+	    padding: 10px;
+	    width:310px;
+	}
+	#inputArea input, #inputArea textarea
+	{
+	    font-family: Arial, Sans-Serif;
+	    font-size: 13px;
+	    margin-bottom: 5px;
+	    display: block;
+	    padding: 4px;
+	    width: 300px;
+	}
+
+        .activeField
+        {
+            background-image: none;
+            background-color: #ffffff;
+            border: solid 1px #33677F;
+        }
+        .idle
+        {
+	    border: solid 1px #85b1de;
+	    background-image: url( 'blue_bg.png' );
+	    background-repeat: repeat-x;
+	    background-position: top;
+        }
+        </style>
+</head>
+<body>
+    <form id="Form1" class="" runat="server">
+    <div id="wrapper">
+	<div id="header" class="style1">
+		<h1 id="h1">School Website</h1>
+		<%--<h2><a href="<%= ResolveUrl("~/AboutUs.aspx") %>">   </a></h2>--%>
+	</div>
+    <div id="menu">
+			<ul >
+				 
+              <%--  <li class="item"><a     id="AboutUs"    href="AboutUs.aspx" title="" runat="server">About Us</a></li>--%>
+				<li class="item">
+                    <asp:LinkButton ID="LinkButtonLogout"  runat="server" 
+                        onclick="LinkButtonLogout_Click">Logout</asp:LinkButton><asp:Label ID="Labeluser" runat="server"
+                            Text=" "></asp:Label>
+                    </li>
+			
+			</ul>
+	</div>
+	<div id="content">
+		<div id="blog" >
+			
+
+            
+
+
+
+
+		    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               <br />
+                        <br />
+
+            <br />
+
+            <br />
+
+            <br />
+
+            <br />
+
+            <br />
+            <br />
+            <br />
+             <br />
+                        <br />
+
+            <br />
+
+            <br />
+
+            <br />
+
+            <br />
+
+            <br />
+            <br />
+            <br />
+            </asp:ContentPlaceHolder>
+			
+		</div>
+        <div id="sidebar" dir="ltr">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+               
+            </asp:ContentPlaceHolder>
+			
+        </div>
+		<!-- end #sidebar -->
+		<!-- end #blog -->
+		<div style="clear: both; height: 1px;"></div>
+	</div>
+	<!-- end #content -->
+
+	<!-- Please do not remove the "Design by" information. -->
+	<div id="footer">
+		<p></p>
+	</div>
+	<!-- end footer -->
+
+</div>
+    </form>
+</body>
+</html>
+
